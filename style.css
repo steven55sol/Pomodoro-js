@@ -1,0 +1,93 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #af0e0e;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: min(90%, 500px);
+    background-color: #111;
+    padding: 4em 2em;
+    border-radius: .4em;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    
+}
+
+button{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn,
+.btn-start,
+.btn-pause{
+   padding: 1em 2em;
+   background-color: #343333;
+   color: #fff;
+   font-weight: 600;
+   border-radius: .2em;
+}
+
+.btn-focus{
+    background-color: #af0e0e;
+}
+
+.time-btn-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 1em;
+}
+
+.time{
+    color: #fff;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.btn-container-controls{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.btn-pause,.btn-start{
+ cursor: pointer;
+ background-color: #fff;
+ color: #000;   
+}
+
+.btn-reset{
+    background-color: transparent;
+    color: #fff;
+    outline: 0;
+    border: none;
+}
+
+.icon{
+    width: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
